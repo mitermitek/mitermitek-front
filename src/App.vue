@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RiGithubFill, RiLinkedinBoxFill } from '@remixicon/vue'
+</script>
 
 <template>
   <main class="container max-w-6xl mx-auto px-2 py-4 space-y-6">
@@ -16,7 +18,7 @@
         rel="noopener noreferrer"
         class="hover:text-gray-600 hover:underline"
       >
-        <i class="ri-github-fill"></i> GitHub
+        <span class="inline-flex items-center gap-x-1"><RiGithubFill /> GitHub</span>
       </a>
       <a
         href="https://www.linkedin.com/in/mitermitek/"
@@ -24,7 +26,7 @@
         rel="noopener noreferrer"
         class="hover:text-gray-600 hover:underline"
       >
-        <i class="ri-linkedin-box-fill"></i> LinkedIn
+        <span class="inline-flex items-center gap-x-1"><RiLinkedinBoxFill /> LinkedIn</span>
       </a>
     </div>
 
