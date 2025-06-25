@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import 'remixicon/fonts/remixicon.css';
+
+html,
+body {
+  font-family: 'Domine', serif;
+  background-color: #fffbf5;
+}
