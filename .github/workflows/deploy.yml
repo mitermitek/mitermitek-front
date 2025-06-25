@@ -34,7 +34,7 @@ jobs:
           fi
 
       - name: Clean remote folder
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
@@ -44,7 +44,7 @@ jobs:
             rm -rf /var/www/mitermitek-front/*
 
       - name: Upload to VPS
-        uses: appleboy/scp-action@v1
+        uses: appleboy/scp-action@v1.0.0
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
